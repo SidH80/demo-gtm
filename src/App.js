@@ -17,10 +17,20 @@ function App() {
         >
           Learn React
         </a>
-        <button id="help-tip-button" name="Account Balance" className="help-tip-button">
+        <button
+          id="help-tip-button"
+          data-gtm="Account Balance"
+          name="Account Balance"
+          className="help-tip-button"
+        >
           Account Balance
         </button>
-        <button id="accordion" name="Account Balance" className="accordion-button">
+        <button
+          id="accordion"
+          data-gtm="Accordion"
+          name="Account Balance"
+          className="accordion-button"
+        >
           Accordion
         </button>
       </header>
