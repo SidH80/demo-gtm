@@ -11,6 +11,7 @@ const HelptipIcon = ({ id, isOpen }) => (
     <svg
         className='helptip-icon'
         id={id}
+        data-gtm="Account Balance"
         data-testid='helptip-icon'
         focusable='false'
         height='16px'
