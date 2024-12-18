@@ -26,7 +26,7 @@ function App() {
         >
           Learn React
         </a>
-        <button
+        {/* <button
           id="help-tip-button"
           data-gtm="Account Balance"
           name="Account Balance"
@@ -36,14 +36,15 @@ function App() {
         </button>
         <button
           id="accordion"
-          name="Account Balance"
-          className="accordion-button"
+          data-gtm="Accordion"
+          name="Accordion"
+          className="help-tip-button"
         >
           Accordion
-        </button>
+        </button> */}
         <div className="help-tip-group">
           <HelptipGroup
-            data-gtm="Account Balance"
+            data-gtm="Help Tip"
             open={isOpen}
             toggle={() => setIsOpen(!isOpen)}
             content={content}

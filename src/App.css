@@ -30,20 +30,22 @@
 
 .help-tip-button {
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 30px;
   outline-color: #61dafb;
   background-color: #282c34;
   color: aliceblue;
 }
 
 .help-tip-group {
+  margin-top: 10px;
+  margin-top: 50px;
   width: 400px;
   font-size: 10px;
+  position: relative;
 }
 
 .accordion-button {
   padding: 10px;
-  margin-top: 10px;
   outline-color: #61dafb;
   background-color: #282c34;
   color: aliceblue;
