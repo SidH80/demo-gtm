@@ -1,0 +1,25 @@
+.DateField__calendarButton {
+    font-size: 20px;
+    color: var(--Blue);
+    background-color: transparent;
+    border: none;
+    padding: 9px 16px 8px 12px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    line-height: 0;
+    margin-bottom: 5px;
+}
+
+.DateField__calendarButton:hover {
+    color: var(--BlueDark);
+}
+
+p.date-format-hint {
+    color: var(--GrayDark);
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0px 0px 8px 0px;
+}

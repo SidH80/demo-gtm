@@ -1,0 +1,32 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+.logout-icon {
+    padding-right: 5px;
+    fill: var(--White);
+    display: inline-flex;
+    height: 1em;
+    align-self: center;
+    width: 1em;
+    top: 0.125em;
+    position: relative;
+}
+
+/** ----------------------- *
+*   Element Selectors     *
+* ----------------------- */
+
+/** ----------------------- *
+*    Modifying Selectors  *
+* ----------------------- */
+
+#nav-list-ul > li > a,
+#nav-list-ul > li > a:visited {
+    color: var(--White);
+}
+:any-link {
+    cursor: pointer;
+}
+.link-list {
+    list-style: none;
+}

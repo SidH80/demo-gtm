@@ -1,0 +1,84 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+.irs-button {
+    letter-spacing: 0.04em;
+    padding: 12px 22px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: uppercase;
+    fill: var(--White);
+    font-weight: 400;
+
+    /* new for anchor tag*/
+    text-decoration: none;
+
+    /* Borrowed from Chrome user agent stylesheet */
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    word-spacing: normal;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin: 0em;
+}
+
+@media (max-width: 575px) {
+    .irs-button {
+        width: 100%;
+    }
+}
+
+/** ----------------------- *
+  *   Element Selectors     *
+  * ----------------------- */
+
+/** ----------------------- *
+  *    Modifying Selectors  *
+  * ----------------------- */
+.irs-button--disabled {
+    background: var(--GrayDark);
+    color: var(--GrayDark);
+    fill: var(--GrayDark);
+    cursor: not-allowed;
+    box-shadow: none;
+    border: 2px solid var(--GrayDark);
+}
+
+.irs-button--active {
+    background: var(--Blue);
+    color: var(--White);
+    fill: var(--White);
+    cursor: pointer;
+    box-shadow: none;
+    border: var(--Blue);
+}
+
+.irs-button--active:hover {
+    background: var(--BlueDark);
+    color: var(--White);
+    fill: var(--White);
+    cursor: pointer;
+    box-shadow: none;
+    border: var(--Blue);
+}
+
+.irs-button--print {
+    border: 2px solid var(--Blue) !important;
+}
+
+.irs-button--active.inverted {
+    color: var(--Blue);
+    fill: var(--Blue);
+    border: 1px solid var(--Blue);
+    background: var(--White);
+}
+
+.irs-button--active.inverted svg.external-icon {
+    color: var(--BlueDark);
+}

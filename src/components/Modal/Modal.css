@@ -1,0 +1,44 @@
+div.modal__content {
+    background-color: var(--White);
+    box-shadow: 0 1px 5px 0px rgb(0 0 0 / 20%), 0 2px 2px 0px rgb(0 0 0 / 14%),
+        0 3px 1px -2px rgb(0 0 0 / 12%);
+    height: max-content;
+    /* 64px for padding, 16px for gutter, 17.5px for the close button */
+    max-width: calc(100vw - 64px - 16px - 17.5px);
+    overflow-wrap: anywhere;
+    padding: 32px;
+    position: relative;
+    top: 20%;
+    overflow-y: visible;
+}
+
+@media (min-width: 997.5px) {
+    div.modal__content {
+        max-width: 900px;
+        overflow-wrap: normal;
+    }
+}
+
+.modal__overlay {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 125ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+button.modal__close-button {
+    border-style: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -17.5px;
+    top: -17.5px;
+}

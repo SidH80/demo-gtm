@@ -1,0 +1,76 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+
+.helptip-button {
+    background-color: var(--White);
+    color: var(--GrayDarkest);
+    margin: 0 -4px;
+    padding: 0 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: inherit;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+/** ----------------------- *
+  *   Element Selectors     *
+  * ----------------------- */
+
+.helptip-button:hover {
+    cursor: pointer;
+}
+
+.helptip-button__icon {
+    margin-left: 3px;
+}
+
+.helptip-button:hover .helptip-icon-path {
+    fill: var(--BlueDark);
+}
+
+.helptip-button:focus .helptip-button__icon-wrapper {
+    outline: 3px solid var(--BlueVivid);
+    outline-offset: 4px;
+}
+
+/* Accommodate 3px for the focus outline width */
+.helptip-button .helptip-button__icon-wrapper {
+    left: 3px;
+    position: relative;
+}
+
+.helptip-button__button-wrapper {
+    margin: 0;
+}
+
+.helptip-button__font-style {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+    span.helptip-button__button-wrapper .helptip-button {
+        display: block;
+        margin-right: 35%;
+    }
+}
+
+@media (min-width: 358px) and (max-width: 362px) {
+    span.helptip-button__button-wrapper .helptip-button {
+        margin-right: 31%;
+    }
+}
+
+@media (max-width: 321px) and (min-width: 319px) {
+    span.helptip-button__button-wrapper .helptip-button {
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 377px) and (min-width: 372px) {
+    span.helptip-button__button-wrapper .helptip-button {
+        margin-right: 17%;
+    }
+}

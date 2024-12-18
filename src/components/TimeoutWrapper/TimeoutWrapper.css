@@ -1,0 +1,35 @@
+
+/* --------------------------- *
+ *  Styling for timeout modal display
+ * ------------------------------- */
+
+.timeout-modal--active {
+    display: grid;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+@media (max-width: 576px) {
+    .timeout-modal--active {
+        top: 190px;
+    }
+}
+
+/** -----------
+ *  Element
+ *  ----------- */
+
+ .timeout__backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}

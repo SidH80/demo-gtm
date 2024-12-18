@@ -1,0 +1,212 @@
+span.irs-header__logo {
+    display: flex;
+    justify-content: center;
+}
+
+span.irs-header__logo a {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+header div.irs-header {
+    padding: 20px 0;
+}
+
+header a:focus {
+    outline: 3px solid var(--BlueVivid); /* Blue Vivid */
+    border-radius: 0;
+    box-shadow: none;
+    outline-offset: -3px;
+}
+
+header button:focus {
+    outline: 3px solid var(--BlueVivid); /* Blue Vivid */
+    border-radius: 0;
+    box-shadow: none;
+    outline-offset: -3px;
+}
+
+header {
+    background-color: var(--GrayLighter);
+}
+
+header div.irs-header,
+header div.irs-header > div.irs-header__content,
+header div.irs-header > div.irs-header__content > span.right-aligned-elts {
+    height: fit-content;
+    align-items: center;
+}
+
+header div.irs-header > div.irs-header__content > span.left-aligned-elts,
+header
+    div.irs-header
+    > div.irs-header__content
+    > span.right-aligned-elts
+    > div.irs-header--phone {
+    height: 36px; /* IE11 support since height: fit-content not supported */
+}
+
+header
+    div.irs-header
+    > div.irs-header__content
+    > span.right-aligned-elts
+    > div.irs-header--large {
+    height: 20px; /* IE11 support since height: fit-content not supported */
+}
+
+#idv-root div.irs-header svg.irs-logo, /* remove when IDV specific CSS removed */
+span.irs-header__logo svg.irs-logo {
+    padding: 0;
+}
+
+#idv-root div.irs-header svg.irs-logo, /* remove when IDV specific CSS removed */
+span.irs-header__logo svg.irs-logo,
+span.irs-header__logo a,
+span.irs-header__logo.left-aligned-elts {
+    height: 36px;
+}
+
+span.irs-header__logo svg.irs-logo {
+    width: 104px;
+}
+
+span.irs-header__logo svg.irs-logo {
+    height: inherit;
+    fill: var(--White);
+}
+
+/* custom IDV rule until IDV custom styles can be retired */
+div.irs-header span.right-aligned-elts > div:first-child {
+    margin: 0;
+}
+
+@media (min-width: 992px) {
+    span.irs-header__logo svg.irs-logo, /* custom IDV selector until IDV custom styles can be retired */
+    span.irs-header__logo a,
+    span.irs-header__logo.left-aligned-elts {
+        height: 36px;
+    }
+}
+
+@media (max-width: 991px) {
+    div.irs-header span.right-aligned-elts.right-aligned-menu {
+        margin-top: -40px;
+    }
+
+    div.irs-header--phone button.dropdown-button--active,
+    div.irs-header--phone button.dropdown-button {
+        height: 73px;
+    }
+
+    #idv-root div.irs-header svg.irs-logo, /* custom IDV selector until IDV custom styles can be retired */
+    span.irs-header__logo svg.irs-logo,
+    span.irs-header__logo a,
+    span.irs-header__logo.left-aligned-elts,
+    header div.irs-header > div.irs-header__content > span.left-aligned-elts,
+    header div.irs-header > div.irs-header__content > span.right-aligned-elts > div.irs-header--phone {
+        height: 33px; /* IE11 support since height: fit-content not supported */
+    }
+}
+
+@media (max-width: 767px) {
+    header div.irs-header {
+        padding: 16px 0;
+    }
+
+    div.irs-header span.right-aligned-elts.right-aligned-menu {
+        margin-top: -32px;
+    }
+
+    div.irs-header--phone button.dropdown-button--active,
+    div.irs-header--phone button.dropdown-button {
+        height: 65px;
+    }
+
+    span.irs-header__logo svg.irs-logo {
+        height: 33px;
+        width: 95px;
+    }
+}
+
+div.irs-header {
+    background-color: var(--Blue);
+    color: var(--White);
+    display: block;
+}
+
+.irs-header__content {
+    align-content: center;
+    align-items: center;
+}
+
+.irs-header--large {
+    display: none;
+}
+
+.irs-header--phone {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* The below styling enables desktop views */
+/* Small tablet landscape breakpoint */
+@media (min-width: 992px) {
+    /** BLOCK **/
+    .irs-header {
+        padding: 20px 0;
+    }
+
+    /** MODIFIERS **/
+    .irs-header--large {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .irs-header--phone {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .irs-header__content .container {
+        height: 57px;
+        padding: 0;
+        margin-left: 8px;
+        margin-right: 0;
+    }
+    .dropdown-section li {
+        float: none !important;
+        width: auto !important;
+    }
+    .link-list li {
+        float: none !important;
+    }
+
+    .right-aligned-menu {
+        margin-right: calc(50% - 50vw);
+    }
+
+    .irs-header__content {
+        overflow: visible;
+    }
+
+    .dropdown-button--active {
+        margin: 0;
+    }
+
+    .irs-header--phone button.dropdown-button:focus {
+        outline: 3px solid var(--BlueVivid); /* Blue Vivid */
+        border-radius: 0;
+        box-shadow: none;
+        outline-offset: -3px;
+    }
+
+    .irs-header--phone button.dropdown-button--active:focus {
+        outline: 3px solid var(--BlueVivid); /* Blue Vivid */
+        border-radius: 0;
+        box-shadow: none;
+        outline-offset: -3px;
+    }
+}

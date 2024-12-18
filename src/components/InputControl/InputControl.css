@@ -1,0 +1,12 @@
+.input-text {
+    font-size: 16px;
+    padding: 12px 16px;
+    line-height: 20px;
+    border: 1px solid var(--GrayDarkest);
+}
+
+.input-text:focus {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: var(--BlueVivid);
+}

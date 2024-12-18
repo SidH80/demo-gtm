@@ -1,0 +1,136 @@
+.sectionTitle {
+    display: block;
+    margin: 0;
+    margin-right: auto;
+    -webkit-margin-after: 0;
+    margin-block-end: 0;
+    -webkit-margin-before: 0;
+    margin-block-start: 0;
+    font-size: 40px;
+    min-height: 56px;
+}
+
+@media all and (min-width: 1200px) {
+    .sectionTitleContainer {
+        max-width: 1140px;
+    }
+}
+
+.sectionTitleContainer {
+    display: -webkit-flex;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outerSectionTitleWrapper {
+    width: 100%;
+    background-color: rgb(243, 243, 243);
+    border-bottom: 1px solid rgb(214, 215, 217);
+}
+
+@media (max-width: 991px) {
+    .sectionTitle__subHeader {
+        bottom: 0px;
+        display: flex !important;
+        padding-left: 10px;
+    }
+    .sectionTitle__subHeader-container {
+        margin-top: 0px;
+    }
+}
+
+.sectionTitle__title-content {
+    display: flex;
+    margin-right: auto;
+    align-items: flex-end;
+    margin-bottom: 12px;
+    line-height: 56px;
+    font-size: 40px;
+}
+.sectionTitle:focus {
+    outline: 1px dotted #3e94cf;
+}
+
+.sectionTitle__subHeader {
+    font-size: 20px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: bottom;
+    bottom: -2px;
+}
+
+.sectionTitle__subHeader .sectionTitle__subHeader-content {
+    font-weight: 700;
+}
+
+@media all and (max-width: 1199px) and (min-width: 992px) {
+    .sectionTitleContainer {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sectionTitle__title-content {
+        padding-left: 11px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .sectionTitle__subHeader--column {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+
+    .sectionTitleContainer {
+        display: inline;
+    }
+
+    .sectionTitle {
+        min-height: 0px;
+    }
+
+    .sectionTitle__subHeader-container {
+        padding-left: 12px;
+    }
+}
+
+@media screen and (max-width: 558px) {
+    .sectionTitle__subHeader-container {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+    h1.sectionTitle {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    h1.sectionTitle * {
+        padding: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .msg-center {
+        margin-bottom: 1px;
+        box-sizing: border-box;
+    }
+
+    h1.sectionTitle {
+        margin-left: 0px;
+        margin-bottom: 12px;
+        padding-left: 8px;
+    }
+
+    h1.sectionTitle * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .pane-header,
+    .notifications-pane__list__item {
+        padding: 8px;
+    }
+}

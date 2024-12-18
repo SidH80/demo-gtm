@@ -1,0 +1,29 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+.table {
+    border-collapse: collapse;
+}
+
+.table__title {
+    margin: 5px 0px;
+}
+
+.table__caption {
+    text-align: left;
+}
+
+ .table__header {
+    border-bottom: 1px solid rgb(204, 204, 204);
+ } 
+
+/** ----------------------- *
+*   Element Selectors     *
+* ----------------------- */
+
+/** ----------------------- *
+*    Modifying Selectors  *
+* ----------------------- */
+.table--indent-left {
+    margin-left: 20px;
+}

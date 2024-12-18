@@ -1,0 +1,30 @@
+.expand-content__more-link, .expand-content__less-link {
+    color: var(--Blue);
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.expand-content__more-link:hover,
+ .expand-content__less-link:hover {
+     color: var(--BlueDark);
+ }
+
+ .expand-content__more-link:focus,
+ .expand-content__less-link:focus {
+    outline: 3px solid var(--BlueVivid);
+    outline-offset: 0;
+ }
+
+.expand-content__collapsed {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.expand-content__children {
+    display: block;
+}
+
+.expand-content__children-isClosed {
+    display: none;
+}

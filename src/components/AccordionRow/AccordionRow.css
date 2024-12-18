@@ -1,0 +1,88 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.accordion__toggle:focus {
+    outline: 3px solid var(--BlueVivid);
+}
+
+button.accordion__toggle.accordion--open {
+    margin-bottom: 3px;
+}
+
+/** ----------------------- *
+  *   Element Selectors     *
+  * ----------------------- */
+
+.accordion__header-tag {
+    margin: 0;
+}
+
+.accordion__toggle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: none;
+    width: 100%;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    padding: 16px;
+}
+
+.accordion__content {
+    display: inline-block;
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    transform: scale(1);
+    text-align: left;
+    color: var(--GrayDarkest);
+}
+
+.accordion__expandable-content {
+    margin: 10px 5%;
+    background: var(--White);
+}
+
+.accordion__unopenable-header {
+    padding: 16px;
+    padding-left: 48px;
+}
+
+/** ----------------------- *
+  *    Modifying Selectors  *
+  * ----------------------- */
+
+.accordion--bounded {
+    border: 1px solid var(--GrayLight);
+}
+
+.accordion--unbounded {
+    border-bottom: 1px solid var(--GrayLight);
+}
+
+.accordion--no_bottom_border {
+    border-bottom: none;
+}
+
+.accordion--blue {
+    background: var(--TealLightest);
+}
+
+.accordion--unopenable {
+    font-weight: 400;
+    color: var(--GrayDarkest);
+}
+
+.accordion--open {
+    border-bottom: 1px solid var(--GrayLight);
+}

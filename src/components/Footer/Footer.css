@@ -1,0 +1,104 @@
+footer {
+    background-color: var(--GrayDarkest);
+    padding: 24px 0;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container .irs-logo,
+.footer-container ul {
+    text-align: center;
+}
+
+.irs-logo {
+    height: 28px;
+    width: 81px;
+    fill: var(--White);
+}
+
+footer ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+}
+
+.rcl-2 footer[role="contentinfo"] a {
+    color: #FFF;
+}
+
+.rcl-2 footer[role="contentinfo"] a,
+footer ul.ul-link li > a {
+    text-decoration: none;
+}
+
+.rcl-2 footer[role="contentinfo"] a:hover,
+footer ul.ul-link li > a:hover {
+    text-decoration: underline;
+    color: var(--White);
+}
+
+.rcl-2 footer[role="contentinfo"] a:focus,
+footer ul.ul-link li > a:focus {
+    outline: 3px solid var(--BlueVivid);
+    outline-offset: 0;
+}
+
+.rcl-2 footer[role="contentinfo"] ul > li {
+    padding-bottom: 0;
+}
+
+footer ul.ul-link {
+    margin: 0;
+}
+
+footer li {
+    margin-top: 12px;
+    padding-bottom: 0;
+}
+
+@media (min-width: 992px) {
+    footer {
+        background-color: var(--GrayDarkest);
+        padding: 0;
+    }
+
+    footer .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .footer-container .irs-logo,
+    .footer-container ul {
+        display: flex;
+    }
+
+    footer div.footer-container {
+        height: 48px;
+    }
+
+    footer li {
+        margin-top: 0;
+        padding-right: 8px;
+        padding-bottom: 0;
+        border-right: 1px solid var(--White);
+        margin-right: 8px;
+    }
+
+    footer li:last-of-type {
+        padding-right: 0;
+        border-right: none;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    footer .footer-container {
+        max-width: 1140px;
+    }
+}
+

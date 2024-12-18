@@ -1,0 +1,47 @@
+.single-select {
+    font-family: inherit;
+    font-size: 16px;
+    max-width: 30em;
+    margin: 8px 0;
+    border-radius: 0;
+    padding: 12px 60px 12px 16px;
+    line-height: 20px;
+    background-color: var(--White);
+    background-image: url('./dropdown-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+.single-select:focus {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: var(--BlueVivid);
+}
+/* disable scrollbar in CHROME */
+.single-select::-webkit-scrollbar {
+    display: none;
+}
+
+.single-select--no-error {
+    border: 1px solid var(--GrayDarkest);
+}
+.single-select--error {
+    border: 1px solid var(--Red);
+}
+.single-select:disabled {
+    cursor: not-allowed;
+}
+/**
+  * Used to hide the default arrow icon in IE
+  *
+  * @see https://stackoverflow.com/a/28274325
+  */
+.single-select::-ms-expand {
+    display: none;
+}

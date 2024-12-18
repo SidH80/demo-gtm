@@ -1,0 +1,52 @@
+.rcl-2 nav.tab-nav-row ul li {
+    padding-bottom: 0px;
+}
+
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+
+.tab-nav-row {
+    background: var(--BlueDark);
+    color: var(--White);
+}
+
+@media (max-width: 991px) {
+    .tab-nav-row {
+        display: none;
+    }
+}
+/** ----------------------- *
+*   Element Selectors     *
+* ----------------------- */
+.tab-nav-row__item,
+.tab-nav-row-item__link {
+    display: block;
+    text-decoration: none;
+    color: var(--White);
+}
+
+.tab-nav-row-item__link {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 20px;
+}
+/** ----------------------- *
+*    Modifying Selectors  *
+* ----------------------- */
+.tab-nav-row__li--selected {
+    background-color: var(--Blue);
+    color: var(--White);
+    font-weight: 700;
+}
+
+.tab-nav-row__li--selected:focus {
+    outline: 3px solid var(--White);
+    outline-offset: -3px;
+}
+
+.tab-nav-row__li:hover .tab-nav-row-item__link,
+.tab-nav-row__li:hover .tab-nav-row-item__link.tab-nav-row__li--selected {
+    background-color: var(--GrayLighter);
+    color: var(--Blue);
+}

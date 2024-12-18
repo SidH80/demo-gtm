@@ -1,0 +1,9 @@
+.chevron-right-icon--active {
+    color: var(--Blue);
+    margin-left: 8px;
+}
+
+.chevron-right-icon--mute {
+    color: var(--GrayDark);
+    margin-left: 8px;
+}

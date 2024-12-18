@@ -1,0 +1,5 @@
+.modal__close-icon {
+    border-radius: 50%;
+    background-color: var(--White);
+    color: var(--Blue);
+}

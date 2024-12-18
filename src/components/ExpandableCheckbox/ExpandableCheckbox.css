@@ -1,0 +1,4 @@
+.expandable-checkbox__content {
+    /* padding equates to the parent checkbox's width and its margin to the label */
+    padding-left: 37px;
+}

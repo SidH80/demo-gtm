@@ -1,0 +1,24 @@
+.header-not-sortable,
+.header-sortable {
+    color: var(--Blue);
+}
+
+button.header-sortable:focus,
+button.header-sortable--active:focus {
+    outline: 3px solid var(--BlueVivid);
+}
+
+button.header-sortable,
+button.header-sortable--active {
+    background: transparent;
+    border: none;
+    font: inherit;
+    cursor: inherit;
+    padding: 0 20px 0 0;
+}
+
+th.header-sortable--active {
+    color: var(--BlueDark);
+    border-bottom: 3px solid;
+    border-color: var(--BlueDark);
+}

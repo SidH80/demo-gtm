@@ -1,0 +1,141 @@
+/* DEPRECATED — START */
+.dropdown-section-nav li {
+    float: none;
+    width: 100%;
+}
+
+/* .dropdown-section-nav.link-list li.selected {
+    background: rgb(0, 70, 115);
+}
+
+.dropdown-section-nav.link-list li:hover {
+    background: rgb(0, 70, 115);
+}
+
+.dropdown-section-nav.link-list button:hover {
+    background: rgb(0, 70, 115);
+} */
+
+.dropdown-link-nav,
+.dropdown-link-nav:visited {
+    display: block;
+    text-decoration: none;
+    color: var(--White);
+    padding: 16px;
+    padding-left: 20px;
+    background: inherit;
+}
+@media (min-width: 992px) {
+    .dropdown-section-nav__item--selected {
+        background: var(--BlueDark);
+    }
+}
+
+.dropdown-section-nav__item:hover:not(.header) {
+    background: var(--BlueDark);
+}
+
+.dropdown-user-box-item.header {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 16px;
+    margin: 0;
+}
+/* DEPRECATED — END */
+
+/* TODO — START: refactor class names when porting to @irs namespace */
+
+/* main mobile menu — START */
+ul.dropdown-section-nav.link-list > li > a,
+ul.dropdown-section-nav.link-list > li > button {
+    padding: 12px 20px;
+    font-size: 18px;
+    line-height: 20px;
+    border-bottom: 1px solid var(--Blue);
+}
+
+ul.dropdown-section-nav.link-list > li > a:link,
+ul.dropdown-section-nav.link-list > li > a:visited,
+ul.dropdown-section-nav.link-list > li > a:hover,
+ul.dropdown-section-nav.link-list > li > a:active,
+ul.dropdown-section-nav.link-list > li > button:link,
+ul.dropdown-section-nav.link-list > li > button:visited,
+ul.dropdown-section-nav.link-list > li > button:hover,
+ul.dropdown-section-nav.link-list > li > button:active {
+    background-color: var(--BlueDark);
+    color: var(--White);
+}
+/* main mobile menu — END */
+
+/* user mobile menu — START */
+ul.dropdown-section.link-list > li:first-child,
+ul.dropdown-section.link-list > li > a,
+ul.dropdown-section.link-list > li > div > button {
+    padding: 8px 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+ul.dropdown-section.link-list > li[role='separator'] {
+    margin: 8px 0 8px 20px;
+    height: 1px;
+    background-color: var(--BlueVivid);
+}
+
+ul.dropdown-section.link-list > li > a:link,
+ul.dropdown-section.link-list > li > a:visited,
+ul.dropdown-section.link-list > li > a:hover,
+ul.dropdown-section.link-list > li > a:active,
+ul.dropdown-section.link-list > li > div > button:link,
+ul.dropdown-section.link-list > li > div > button:visited,
+ul.dropdown-section.link-list > li > div > button:hover,
+ul.dropdown-section.link-list > li > div > button:active {
+    background-color: var(--Blue);
+    color: var(--White);
+    text-decoration: none;
+}
+
+ul.dropdown-section.link-list > li:first-child {
+    padding: 20px 20px 8px 20px;
+    text-transform: uppercase;
+}
+/* user mobile menu — END */
+
+/* subnav mobile menu — START */
+ul.link-list ul.DropdownSubNav__ul li > a,
+ul.DropdownSubNav__ul li > button {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    display: flex;
+}
+
+ul.link-list ul.DropdownSubNav__ul li:first-of-type > * {
+    padding-top: 24px;
+}
+
+ul.link-list ul.DropdownSubNav__ul li:last-of-type > * {
+    padding-bottom: 24px;
+}
+
+ul.DropdownSubNav__ul li > a:link,
+ul.DropdownSubNav__ul li > a:visited,
+ul.DropdownSubNav__ul li > a:hover,
+ul.DropdownSubNav__ul li > a:active,
+ul.DropdownSubNav__ul li > button:link,
+ul.DropdownSubNav__ul li > button:visited,
+ul.DropdownSubNav__ul li > button:hover,
+ul.DropdownSubNav__ul li > button:active,
+a.dropdown-switcher-section__link:link,
+a.dropdown-switcher-section__link:visited,
+a.dropdown-switcher-section__link:hover,
+a.dropdown-switcher-section__link:active {
+    text-decoration: none;
+    color: var(--Blue);
+    background-color: var(--GrayLighter);
+}
+/* subnav mobile menu — END */
+/* TODO — END */
+
+

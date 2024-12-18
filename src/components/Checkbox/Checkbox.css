@@ -1,0 +1,72 @@
+.irs-checkbox {
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.irs-checkbox--disabled {
+    cursor: not-allowed;
+}
+
+.irs-checkbox__check-container {
+    flex-shrink: 0;
+}
+
+/* Hide the interactive checkbox element without removing it from the DOM */
+.irs-checkbox input[type='checkbox'] {
+    position: absolute;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.irs-checkbox
+    input[type='checkbox']
+    + .irs-checkbox__check-container
+    > .irs-checkbox__check-icon {
+    fill: transparent;
+}
+
+.irs-checkbox
+    input[type='checkbox']:checked
+    + .irs-checkbox__check-container
+    > .irs-checkbox__check-icon {
+    fill: var(--White);
+}
+
+/* Regular checkbox input states */
+.irs-checkbox input[type='checkbox'] + .irs-checkbox__check-container {
+    background-color: var(--White);
+    border: 1px solid var(--GrayDarkest);
+    border-radius: 3px;
+    height: 18px;
+    width: 18px;
+}
+
+.irs-checkbox input[type='checkbox']:focus + .irs-checkbox__check-container {
+    box-shadow: 0 0 0 1px var(--White), 0 0 0 4px var(--BlueVivid);
+}
+
+.irs-checkbox input[type='checkbox']:checked + .irs-checkbox__check-container {
+    background-color: var(--Blue);
+    border: 1px solid var(--Blue);
+    border-radius: 3px;
+    padding: 2px;
+    height: 14px;
+    width: 14px;
+}
+
+/* Disabled checkbox */
+.irs-checkbox input[type='checkbox']:disabled + .irs-checkbox__check-container {
+    background-color: var(--GrayLight);
+    border: 1px solid var(--GrayLight);
+    border-radius: 3px;
+}
+
+.irs-checkbox input[type='checkbox']:disabled {
+    cursor: not-allowed;
+}
+
+.irs-checkbox input[type='checkbox']:hover {
+    cursor: pointer;
+}

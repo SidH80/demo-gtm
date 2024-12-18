@@ -1,0 +1,74 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+
+.truncate-message {
+    display: flex;
+}
+
+.truncate-message__message-column {
+    flex-direction: column;
+}
+
+.truncate-message__content {
+    transition: height 0.5s ease 0s;
+    overflow: hidden;
+}
+
+.truncate-message .read-link {
+    color: var(--Blue);
+    text-decoration: underline;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 24px;
+    align-self: flex-end;
+    white-space: nowrap;
+    width: initial;
+    margin-top: -1px;
+}
+
+.truncate-message .read-less {
+    margin-top: 7px;
+}
+
+/** ----------------------- *
+  *   Element Selectors     *
+  * ----------------------- */
+
+div.truncate-message .truncate-message__content > p {
+    margin: 0;
+}
+
+div.truncate-message .truncate-message__content > p > p:first-of-type {
+    margin: 12px 0;
+}
+
+.truncate-message__content > p h3 {
+    display: inline;
+    font-size: 16px;
+}
+
+/** ----------------------- *
+*    Modifying Selectors  *
+* ----------------------- */
+
+.truncate-message .read-link:hover {
+    cursor: pointer;
+}
+
+.truncate-message .irs-external-link {
+    color: var(--Blue);
+}
+
+.truncate-message .irs-external-link:after {
+    content: '';
+    display: inline-block;
+    background-size: 100%;
+    height: 15px;
+    width: 15px;
+    vertical-align: -1px;
+    margin-bottom: -1px;
+    margin-left: 4px;
+}

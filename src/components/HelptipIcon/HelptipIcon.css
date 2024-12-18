@@ -1,0 +1,18 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+
+  .helptip-icon {
+    border-radius: 50%;
+    vertical-align: -3px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.helptip-icon-path {
+  fill: var(--Blue);
+}
+
+.helptip-icon:hover .helptip-icon-path {
+  fill: var(--BlueDark);
+}

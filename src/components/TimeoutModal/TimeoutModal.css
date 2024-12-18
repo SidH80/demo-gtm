@@ -1,0 +1,106 @@
+/** ------------------- *
+  *   Block Selector    *
+  * ------------------- */
+.timeout-modal-box {
+    /* layout */
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* sizing */
+    width: 400px;
+
+    /* display */
+    background-color: rgb(255, 255, 255);
+    border: solid 1px var(--GrayLight);
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    padding: 32px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    transition: opacity 125ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.close-icon {
+    right: 100;
+    cursor: pointer;
+}
+
+.inline {
+    display: inline;
+}
+/** ----------------------- *
+*   Element Selectors     *
+* ----------------------- */
+.timeout-modal__header {
+    font-size: 28px;
+    margin: 0;
+    width: 90%;
+}
+
+.timeout-modal__header:focus-visible {
+    outline: var(--BlueVivid) auto 3px;
+}
+
+.timeout-modal-box > p {
+    font-size: 16px;
+}
+
+.timeout-modal__button {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+@media (max-width: 650px) {
+    .timeout-modal-box {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeout-modal-box {
+        max-width: 70vw;
+    }
+    .timeout-modal__button {
+        flex-direction: column;
+    }
+
+    .timeout-modal__button > a {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .timeout-modal__button > .close-button__button-wrapper {
+        margin: 0;
+        padding: 0;
+    }
+}
+/** ----------------------- *
+*    Modifying Selectors  *
+* ----------------------- */
+.timeout-modal__button--display {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+}
+.timeout-modal__button--logout {
+    margin-right: 16px;
+    width: 140px;
+}
+
+@media (max-width: 575px) {
+    .timeout-modal__button--logout {
+        width: 100%;
+    }
+}
+
+.timeout-modal__button--continue {
+    width: 140px;
+}
+
+@media (max-width: 575px) {
+    .timeout-modal__button--continue {
+        width: 100%;
+    }
+}

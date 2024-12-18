@@ -1,0 +1,262 @@
+.gb-display {
+    background-color: var(--GrayLighter);
+    font-family: 'Source Sans Pro', sans-serif !important;
+    color: var(--GrayDarkest);
+}
+
+.gb-layout {
+    padding: 4px 0px 4px 0px;
+    margin: 0px;
+}
+
+.gb-layout.expanded {
+    padding-bottom: 0;
+}
+
+.gb-background-flag {
+    background: url('./assets/us-flag.png') 0 0 no-repeat;
+    background-size: 22px 16px;
+}
+
+.gb__detail-toggle button {
+    padding: 0px 3px 0px 0px;
+    margin-left: 6px;
+}
+
+.gb__detail-toggle button.gb__close-button {
+    padding: 0;
+    margin: 0;
+}
+
+.gb__detail-toggle-button {
+    background-color: transparent;
+    border: none;
+    color: var(--Blue);
+    line-height: 16px;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+
+.gb__detail-toggle svg {
+    margin-left: 9px;
+}
+
+.gb__details {
+    display: flex;
+    gap: 40px;
+}
+
+.gb-layout .container {
+    padding: 0;
+    display: block;
+}
+
+.gb__item {
+    padding: 28px 0px 40px 0px;
+    white-space: break-spaces;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+.gb__text-display {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.gb__text-layout {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.gb__gov-text {
+    white-space: nowrap;
+}
+
+.gb__text-display a {
+    white-space: nowrap;
+}
+
+.gb__link {
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0px 8px;
+}
+
+.gb__text-layout a {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.gb__flag {
+    background-size: '20px 14px';
+}
+
+.gb__item .gb__item-text {
+    display: flow-root;
+}
+
+.gb__item .gb__item-header {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--GrayDarkest);
+    margin: 0px;
+}
+
+.gb__item p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--GrayDarkest);
+    margin: 0px;
+}
+
+.gb__lock-icon {
+    width: 10px;
+    height: 12px;
+}
+
+svg.gb__item-icon {
+    float: left;
+    margin-right: 8px;
+}
+
+svg.gb__item-icon .dotgov-icon-path {
+    fill: #2378c3;
+}
+
+svg.gb__item-icon .dotgov-icon-circle {
+    fill: none;
+    stroke: #2378c3;
+    stroke-miterlimit: 10;
+}
+
+svg.gb__item-icon .https-icon-path {
+    fill: #719f2a;
+}
+
+svg.gb__item-icon .https-icon-circle {
+    fill: none;
+    stroke: #719f2a;
+    stroke-miterlimit: 10;
+}
+
+.gb__close-button {
+    width: 48px;
+    height: 48px;
+    background-color: var(--GrayLight);
+    color: var(--Blue);
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+button.gb__close-button:focus {
+    outline: 3px solid var(--BlueVivid);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline-offset: -3px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.gb__close-button .close-icon {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 16px;
+    height: 100%;
+}
+
+.gb__detail-toggle button:focus {
+    outline: 3px solid var(--BlueVivid);
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline-offset: 0px;
+}
+
+.gb__detail-toggle button.gb__close-button:focus {
+    outline-offset: -3px;
+}
+
+@media (min-width: 992px) {
+    .gb__close-button {
+        display: none;
+    }
+}
+
+/* Desktop/Large+ above, Mobile/Medium below */
+
+@media (max-width: 991px) {
+    .gb-layout {
+        padding: 8px 0px 8px 0px;
+    }
+
+    .gb-layout .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
+
+    .gb-layout .container .gb__text-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gb-layout .container.expanded .gb__text-layout.gb__text-display {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .gb-layout .container.expanded .gb__text-layout.gb__text-display>span,
+    .container.expanded .gb__text-layout.gb__text-display>button {
+        flex-shrink: 0;
+    }
+
+    .gb__gov-text {
+        flex-basis: 100%;
+        white-space: normal;
+    }
+
+    .gb__text-layout a {
+        padding-left: 0;
+        flex-basis: 100%;
+    }
+
+    .gb__details {
+        display: flex;
+        padding: 20px 0px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .gb__detail-toggle button {
+        margin-left: 0;
+    }
+
+    .gb__item {
+        padding: 0px;
+    }
+
+    .gb-layout.expanded .gb__details {
+        margin-top: 24px;
+    }
+}
+
+.gb__detail-toggle-button .down-chevron,
+.gb__detail-toggle-button .up-chevron {
+    color: var(--Blue);
+    height: 6px;
+    width: 10px;
+}

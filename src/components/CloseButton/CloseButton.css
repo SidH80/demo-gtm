@@ -1,0 +1,20 @@
+@media (max-width: 576px) {
+    button.close-button__button-wrapper {
+        position: absolute;
+        right: -17px;
+        top: -17px;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+button.close-button__button-wrapper {
+    border-style: none;
+    background-color: transparent;
+    position: absolute;
+    right: -17px;
+    top: -17px;
+    padding: 0;
+    cursor: pointer;
+}

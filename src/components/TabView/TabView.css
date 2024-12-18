@@ -1,0 +1,91 @@
+.tab-view {
+    margin-top: 12px;
+    margin-bottom: 21px;
+}
+
+.tab-view-container {
+    border-bottom: solid 1px var(--GrayLight);
+    margin: 24px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tab-view-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.tab-view-list-item {
+    margin: 0px 10px;
+}
+
+.tab-view-list-item-hidden {
+    margin: 0;
+}
+
+.basic-tab {
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    -webkit-font-smoothing: auto;
+    font-weight: 400;
+    padding: 4px;
+    color: var(--GrayDark);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.tab-selected {
+    border-bottom: solid 3px var(--BlueDark);
+    color: var(--BlueDark) !important;
+    font-weight: 700 !important;
+}
+
+.basic-tab.basic-disabled {
+    color: var(--GrayDark);
+    cursor: not-allowed;
+}
+
+.tab-hidden {
+    display: none;
+}
+
+.tab-view-tab {
+    display: block;
+}
+
+@media screen and (min-width: 576px) {
+    .tab-view-list {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+.tab-list-chevron {
+    align-self: center;
+}
+
+.tab-list-chevron.left {
+    padding-left: 10px;
+}
+
+.tab-list-chevron.right {
+    padding-right: 10px;
+    margin-left: auto;
+}

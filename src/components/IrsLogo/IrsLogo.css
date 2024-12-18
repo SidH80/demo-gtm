@@ -1,0 +1,4 @@
+.irs-logo__wrapper:focus-within a {
+    outline: 3px solid var(--White);
+    outline-offset: 4px;
+}
