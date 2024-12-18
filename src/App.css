@@ -36,6 +36,11 @@
   color: aliceblue;
 }
 
+.help-tip-group {
+  width: 400px;
+  font-size: 10px;
+}
+
 .accordion-button {
   padding: 10px;
   margin-top: 10px;

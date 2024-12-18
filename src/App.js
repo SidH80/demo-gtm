@@ -1,7 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
+import { useState } from "react";
+import HelptipGroup from "./components/HelptipGroup";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(true);
+  const content = (
+    <p className="test">
+      This is a helptip. Helptips display additional information regarding a
+      topic.
+    </p>
+  );
   return (
     <div className="App">
       <header className="App-header">
@@ -27,12 +36,20 @@ function App() {
         </button>
         <button
           id="accordion"
-          data-gtm="Accordion"
           name="Account Balance"
           className="accordion-button"
         >
           Accordion
         </button>
+        <div className="help-tip-group">
+          <HelptipGroup
+            data-gtm="Account Balance"
+            open={isOpen}
+            toggle={() => setIsOpen(!isOpen)}
+            content={content}
+            index={1}
+          />
+        </div>
       </header>
     </div>
   );
