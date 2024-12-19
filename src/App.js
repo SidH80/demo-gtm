@@ -44,7 +44,6 @@ function App() {
         </button> */}
         <div className="help-tip-group">
           <HelptipGroup
-            data-gtm="Help Tip"
             open={isOpen}
             toggle={() => setIsOpen(!isOpen)}
             content={content}

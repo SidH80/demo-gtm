@@ -38,7 +38,7 @@ const HelptipButton = ({
     const boldFont = isBold ? 'helptip-button__font-style' : '';
 
     return (
-        <Component className='helptip-button__button-wrapper' data-gtm="Account Balance">
+        <Component className='helptip-button__button-wrapper'>
             <button
                 aria-expanded={isOpen}
                 aria-label={ariaLabel}
