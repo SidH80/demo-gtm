@@ -3,22 +3,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: '100vh';
-}
-
-.help-tip-button {
-  padding: 10px;
-  margin-top: 30px;
-  outline-color: #61dafb;
-  background-color: #282c34;
-  color: aliceblue;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .help-tip-group {
-  margin-top: 10px;
   margin-top: 50px;
   width: 400px;
+  height: 60px;
   font-size: 10px;
+}
+
+.accordion-row {
+  margin-top: 50px;
+  height: 60px;
 }
 
 .accordion-button {

@@ -2,42 +2,53 @@ import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import HelptipGroup from "./components/HelptipGroup";
+import AccordionRow from "./components/AccordionRow";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isHelptTipOpen, setIsHelptTipOpen] = useState(true);
+  const [isAccordionRowOpen, setIsAccordionRowOpen] = useState(false);
   const content = (
     <p className="test">
       This is a helptip. Helptips display additional information regarding a
       topic.
     </p>
   );
+  const info = (
+    <ul>
+      <li>Test 1</li>
+    </ul>
+  );
   return (
-      <div className="center">
-        {/* <button
-          id="help-tip-button"
-          data-gtm="Account Balance"
-          name="Account Balance"
-          className="help-tip-button"
-        >
-          Account Balance
-        </button>
-        <button
-          id="accordion"
-          data-gtm="Accordion"
-          name="Accordion"
-          className="help-tip-button"
-        >
-          Accordion
-        </button> */}
-        <div className="help-tip-group">
-          <HelptipGroup
-            open={isOpen}
-            toggle={() => setIsOpen(!isOpen)}
-            content={content}
-            index={1}
-          />
-        </div>
+    <div className="center">
+
+      <div className="help-tip-group">
+        <HelptipGroup
+          open={isHelptTipOpen}
+          toggle={() => setIsHelptTipOpen(!isHelptTipOpen)}
+          content={content}
+          index={1}
+        />
       </div>
+      <div>
+      <div className="accordion-row">
+        <AccordionRow
+          content="Test data"
+          headerLevel={4}
+          onClick={() => setIsAccordionRowOpen(!isAccordionRowOpen)}
+          open={isAccordionRowOpen}
+          ariaLabel="Test data"
+          expandedContent={info}
+          contentStyles={{
+            marginTop: "0px",
+            marginRight: "32px",
+            marginBottom: "24px",
+            marginLeft: "32px",
+          }}
+          bounded
+        />
+      </div>
+      </div>
+    </div>
   );
 }
 
