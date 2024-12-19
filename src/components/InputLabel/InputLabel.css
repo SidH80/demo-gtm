@@ -1,8 +1,0 @@
-.input-label {
-    display: block;
-}
-
-.input-label--required::after {
-    content: '*';
-    color: var(--Red);
-}
