@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
 import HelptipGroup from "./components/HelptipGroup";
@@ -20,7 +19,7 @@ function App() {
   );
   return (
     <div className="center">
-
+      <h2>John Taxpayer Smith</h2>
       <div className="help-tip-group">
         <HelptipGroup
           open={isHelptTipOpen}
